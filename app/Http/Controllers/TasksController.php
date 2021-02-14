@@ -106,7 +106,7 @@ class TasksController extends Controller
         // idの値でメッセージを検索して取得
         $task = Task::findOrFail($id);
         // メッセージを削除
-        $ta->delete();
+        $task->delete();
 
         // トップページへリダイレクトさせる
         return redirect('/');
